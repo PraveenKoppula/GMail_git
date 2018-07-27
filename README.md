@@ -1,2 +1,2 @@
-# GMail_Appiu
+# GMail_Appium
 Explore
