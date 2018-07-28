@@ -34,7 +34,7 @@ public class ClickingMenuItems {
 		Thread.sleep(2000);
     }
 
-	@Test (priority=0)
+	@Test (priority=0 , groups= {"MenuOptions"}) 
 	public void UnreadMailsCount() throws InterruptedException
 	{
 		driver.findElementByXPath("//android.widget.ImageButton[@content-desc='Open navigation drawer']").click();
@@ -44,7 +44,7 @@ public class ClickingMenuItems {
 		Thread.sleep(2000);
 	}	
 	
-	@Test (priority=1)
+	@Test (priority=1 , groups= {"MenuOptions"})
 	public void ClickSocial() throws InterruptedException
 	{
 		driver.findElementByXPath("//android.widget.ImageButton[@content-desc='Open navigation drawer']").click();
@@ -60,7 +60,7 @@ public class ClickingMenuItems {
 		}
 	}
 	
-	@Test (priority=2)
+	@Test (priority=2 , groups= {"MenuOptions"})
 	public void ClickPromotions() throws InterruptedException
 	{
 		driver.findElementByXPath("//android.widget.ImageButton[@content-desc='Open navigation drawer']").click();
@@ -76,7 +76,7 @@ public class ClickingMenuItems {
 		}
 	}
 
-	@Test (priority=3)
+	@Test (priority=3 , groups= {"MenuOptions"})
 	public void ClickStarred() throws InterruptedException
 	{
 		driver.findElementByXPath("//android.widget.ImageButton[@content-desc='Open navigation drawer']").click();
@@ -92,7 +92,7 @@ public class ClickingMenuItems {
 		}
 	}	
 	
-	@Test (priority=4)
+	@Test (priority=4 , groups= {"MenuOptions"})
 	public void ClickSnoozed() throws InterruptedException
 	{
 		driver.findElementByXPath("//android.widget.ImageButton[@content-desc='Open navigation drawer']").click();
@@ -108,7 +108,7 @@ public class ClickingMenuItems {
 		}
 	}	
 	
-	@Test (priority=5)
+	@Test (priority=5 , groups= {"MenuOptions"})
 	public void ClickImportant() throws InterruptedException
 	{
 		driver.findElementByXPath("//android.widget.ImageButton[@content-desc='Open navigation drawer']").click();
@@ -124,7 +124,7 @@ public class ClickingMenuItems {
 		}
 	}	
 	
-	@Test (priority=6)
+	@Test (priority=6 , groups= {"MenuOptions"})
 	public void ClickSent() throws InterruptedException
 	{
 		driver.findElementByXPath("//android.widget.ImageButton[@content-desc='Open navigation drawer']").click();
@@ -140,7 +140,7 @@ public class ClickingMenuItems {
 		}
 	}	
 	
-	@Test (priority=7)
+	@Test (priority=7 , groups= {"MenuOptions"})
 	public void ClickOutbox() throws InterruptedException
 	{
 		driver.findElementByXPath("//android.widget.ImageButton[@content-desc='Open navigation drawer']").click();
@@ -156,7 +156,7 @@ public class ClickingMenuItems {
 		}
 	}	
 	
-	@Test (priority=8)
+	@Test (priority=8 , groups= {"MenuOptions"})
 	public void ClickDrafts() throws InterruptedException
 	{
 		driver.findElementByXPath("//android.widget.ImageButton[@content-desc='Open navigation drawer']").click();
@@ -172,7 +172,7 @@ public class ClickingMenuItems {
 		}
 	}	
 
-	@Test (priority=9)
+	@Test (priority=9 , groups= {"MenuOptions"})
 	public void ClickAllMail() throws InterruptedException
 	{
 		driver.findElementByXPath("//android.widget.ImageButton[@content-desc='Open navigation drawer']").click();
@@ -188,7 +188,7 @@ public class ClickingMenuItems {
 		}
 	}		
 	
-	@Test (priority=10)
+	@Test (priority=10 , groups= {"MenuOptions"})
 	public void ClickSpam() throws InterruptedException
 	{
 		driver.findElementByXPath("//android.widget.ImageButton[@content-desc='Open navigation drawer']").click();
@@ -204,7 +204,7 @@ public class ClickingMenuItems {
 		}
 	}			
 	
-	@Test (priority=11)
+	@Test (priority=11 , groups= {"MenuOptions"})
 	public void ClickTrash() throws InterruptedException
 	{
 		driver.findElementByXPath("//android.widget.ImageButton[@content-desc='Open navigation drawer']").click();
@@ -220,7 +220,7 @@ public class ClickingMenuItems {
 		}
 	}			
 	
-	@Test (priority=12)
+	@Test (priority=12 , groups= {"MenuOptions"})
 	public void ClickSettings() throws InterruptedException
 	{
 		driver.findElementByXPath("//android.widget.ImageButton[@content-desc='Open navigation drawer']").click();
@@ -236,7 +236,7 @@ public class ClickingMenuItems {
 		}
 	}
 	
-	@Test (priority=13)
+	@Test (priority=13 , groups= {"MenuOptions"})
 	public void ClickHelpAndFeedback() throws InterruptedException
 	{
 		driver.findElementByXPath("//android.widget.ImageButton[@content-desc='Open navigation drawer']").click();
