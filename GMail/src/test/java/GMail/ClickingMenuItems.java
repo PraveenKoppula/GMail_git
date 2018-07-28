@@ -33,7 +33,17 @@ public class ClickingMenuItems {
 		driver = new AndroidDriver<>(new URL("http://0.0.0.0:4723/wd/hub"),cap);
 		Thread.sleep(2000);
     }
-	
+
+	@Test (priority=0)
+	public void UnreadMailsCount() throws InterruptedException
+	{
+		driver.findElementByXPath("//android.widget.ImageButton[@content-desc='Open navigation drawer']").click();
+		String UnreadMailCount = driver.findElementByXPath("//android.widget.LinearLayout[@index=1]//android.widget.TextView[@resource-id='com.google.android.gm:id/unread']").getText().toString();
+		System.out.println("UnreadMailCount : " + UnreadMailCount);
+		driver.navigate().back();
+		Thread.sleep(2000);
+	}	
+/*	
 	@Test (priority=1)
 	public void ClickSocial() throws InterruptedException
 	{
@@ -243,6 +253,7 @@ public class ClickingMenuItems {
 			driver.navigate().back();
 		}
 	}			
+*/
 	
 	@AfterClass
 	public void Close() throws InterruptedException
