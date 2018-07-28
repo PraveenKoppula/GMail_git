@@ -3,9 +3,12 @@
 <suite name="GMail Automation tests" >
 	<test name="Sanity test">		
 		<classes>
+			<class name="GMail.ClickingMenuItems" />
 			<class name="GMail.OpenMails" />
 			<class name="GMail.SendingMail" />
 			<class name="GMail.SearchingMail" />
+			<class name="GMail.StarringMailAfterOpening" />	
+			<class name="GMail.ChangeSettings" />		
 		</classes>
 	</test>
 </suite>

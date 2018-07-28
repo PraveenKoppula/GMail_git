@@ -2,6 +2,9 @@ package GMail;
 
 import java.io.IOException;
 import java.net.URL;
+import java.sql.Time;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
 import java.util.List;
 
 import org.openqa.selenium.By;
@@ -44,19 +47,18 @@ public class SendingMail {
 		driver.findElementById("com.google.android.gm:id/compose_button").click();
 		Thread.sleep(2000);
 		System.out.println(driver.getContext());
-		System.out.println( "+++++++++" + driver.findElementByXPath("//*[@resource-id='com.google.android.gm:id/composearea_tap_trap_bottom']"));
 		driver.findElementById("com.google.android.gm:id/composearea_tap_trap_bottom").click();	
 		Thread.sleep(2000);
-		driver.findElementByXPath("//*[@resource-id='com.google.android.gm:id/composearea_tap_trap_bottom']").sendKeys("HELLO BODY ");
-		driver.getKeyboard().sendKeys(Keys.ENTER);
-		driver.getKeyboard().sendKeys("after enter");;
+		String timeStamp = new SimpleDateFormat("MM-dd-yyyy - HH:mm:ss ").format(Calendar.getInstance().getTime());
+		driver.findElementByXPath("//*[@resource-id='com.google.android.gm:id/composearea_tap_trap_bottom']").sendKeys(timeStamp + " HELLO BODY");
 		Thread.sleep(4000);				
-		driver.findElementByXPath("//android.widget.EditText[@resource-id='com.google.android.gm:id/subject']").sendKeys("GMail automation: Unable to enter text in mail body... its a webkit element");
+		driver.findElementByXPath("//android.widget.EditText[@resource-id='com.google.android.gm:id/subject']").sendKeys(timeStamp + " : test mail");
 		Thread.sleep(2000);
 		driver.findElementById("com.google.android.gm:id/to").sendKeys("chotucrazy435@gmail.com");
 		Thread.sleep(2000);
 		driver.findElementById("com.google.android.gm:id/send").click();	
 		Thread.sleep(2000);
+		System.out.println("Mail Sent with system time stamp - PASS");
 	}
 	
 	@AfterClass
