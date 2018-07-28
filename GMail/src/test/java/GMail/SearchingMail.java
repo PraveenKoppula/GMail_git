@@ -46,9 +46,9 @@ public class SearchingMail {
 			System.out.println("Keyboard displayed");
 		}
 		driver.findElementById("com.google.android.gm:id/search_actionbar_query_text").sendKeys("Google Lens");
-		//driver.pressKeyCode(AndroidKeyCode.ENTER);
-		//driver.pressKey(new KeyEvent(AndroidKey.ENTER));
-		driver.getKeyboard().sendKeys(Keys.ENTER);
+		//driver.pressKeyCode(AndroidKeyCode.ENTER); //Going to be deprecated
+		driver.pressKey(new KeyEvent(AndroidKey.ENTER));
+		//driver.getKeyboard().sendKeys(Keys.ENTER);
 		Thread.sleep(2000);
 	}
 	
