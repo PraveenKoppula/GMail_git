@@ -43,7 +43,7 @@ public class ClickingMenuItems {
 		driver.navigate().back();
 		Thread.sleep(2000);
 	}	
-/*	
+	
 	@Test (priority=1)
 	public void ClickSocial() throws InterruptedException
 	{
@@ -253,7 +253,6 @@ public class ClickingMenuItems {
 			driver.navigate().back();
 		}
 	}			
-*/
 	
 	@AfterClass
 	public void Close() throws InterruptedException
