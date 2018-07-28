@@ -45,18 +45,16 @@ public class DeleteMail {
 	{
 		
 		System.out.println("Insideeeeeeeeeeeeee");
-		driver.findElementByXPath("//android.view.View[1]").findElementByAndroidUIAutomator("content-desc(\"Select this conversation\")").isDisplayed();
 		
-	//	AndroidElement elem = driver.findElementByAndroidUIAutomator("content-desc(\"Select this conversation\")");
-		
-		//WebElement elem = driver.findElementByXPath("//android.view.View[1]");
+	//	driver.findElementByXPath("//android.view.View[1]").findElementByAndroidUIAutomator("content-desc(\"Select this conversation\")").isDisplayed();		
+	//	AndroidElement elem = driver.findElementByAndroidUIAutomator("content-desc(\"Select this conversation\")");		
+	//	WebElement elem = driver.findElementByXPath("//android.view.View[1]");
 	//	System.out.println("elem text   : " + elem.getText());
 		
 		TouchAction ta= new TouchAction(driver);
-		//ta.tap(p)
-	//	driver.findElement)
 		
-	//	List<AndroidElement> list = driver.findElementsByXPath("//*//android.view.View//android.view.View[1]");
+		//	driver.findElement		
+		//	List<AndroidElement> list = driver.findElementsByXPath("//*//android.view.View//android.view.View[1]");
 		//list.get(0).click();
 		driver.findElementById("com.google.android.gm:id/delete").click();
 	}

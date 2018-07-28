@@ -22,8 +22,9 @@ public class GMailFirstOpen {
 		cap.setCapability(MobileCapabilityType.DEVICE_NAME, "My device");
 		
 		cap.setCapability("appPackage", "com.google.android.gm");
-		cap.setCapability("appActivity", "com.google.android.gm/com.google.android.gm.ConversationListActivityGmail");		
-		cap.setCapability("noReset", "true");
+		cap.setCapability("appActivity", "com.google.android.gm.welcome.WelcomeTourActivity");		
+		//	cap.setCapability("noReset", "true");
+		//com.google.android.gm/com.google.android.gm.ConversationListActivityGmail
 		//GMail activities: com.google.android.gm/com.google.android.gm.welcome.WelcomeTourActivity
 		//com.google.android.gm/com.google.android.gm.ConversationListActivityGmail
 		//com.google.android.gm/com.google.android.gm.welcome.SetupAddressesActivity
