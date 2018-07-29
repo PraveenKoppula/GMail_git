@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [GMail Automation tests]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Sanity test(failed)">
+    <classes>
+      <class name="GMail.OpenMails">
+        <methods>
+          <include name="OpeningMail"/>
+          <include name="OpenGmailApp"/>
+          <include name="Close"/>
+        </methods>
+      </class> <!-- GMail.OpenMails -->
+      <class name="GMail.ClickingMenuItems">
+        <methods>
+          <include name="ClickImportant"/>
+          <include name="ClickDrafts"/>
+          <include name="ClickSnoozed"/>
+          <include name="ClickHelpAndFeedback"/>
+          <include name="ClickOutbox"/>
+          <include name="ClickStarred"/>
+          <include name="Close"/>
+          <include name="ClickSettings"/>
+          <include name="ClickSpam"/>
+          <include name="ClickPromotions"/>
+          <include name="ClickSent"/>
+          <include name="ClickAllMail"/>
+          <include name="ClickTrash"/>
+          <include name="UnreadMailsCount"/>
+          <include name="ClickSocial"/>
+          <include name="OpenGmailApp"/>
+        </methods>
+      </class> <!-- GMail.ClickingMenuItems -->
+      <class name="GMail.StarringMailAfterOpening">
+        <methods>
+          <include name="OpenGmailApp"/>
+          <include name="StarredMailsList"/>
+          <include name="SendMail"/>
+          <include name="StarringMail"/>
+          <include name="Close"/>
+        </methods>
+      </class> <!-- GMail.StarringMailAfterOpening -->
+    </classes>
+  </test> <!-- Sanity test(failed) -->
+</suite> <!-- Failed suite [GMail Automation tests] -->
