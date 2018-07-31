@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
-<suite name="GMail Automation tests" >
-	<test name="Sanity test">		
+<suite name="GMail Automation tests" parallel="tests" verbose="10">
+	<test name="Sanity test" group-by-instances="true" verbose="2">		
 		<classes>
 			<class name="GMail.ClickingMenuItems" />
 			<class name="GMail.OpenMails" />

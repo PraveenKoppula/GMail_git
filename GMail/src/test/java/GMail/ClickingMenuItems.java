@@ -34,7 +34,7 @@ public class ClickingMenuItems {
 		Thread.sleep(2000);
     }
 
-	@Test (priority=0 , groups= {"MenuOptions"}) 
+	@Test (priority=0 , groups= {"MenuOptions"}, dependsOnMethods = {"ClickSocial", "ClickPromotions"}) 
 	public void UnreadMailsCount() throws InterruptedException
 	{
 		driver.findElementByXPath("//android.widget.ImageButton[@content-desc='Open navigation drawer']").click();
