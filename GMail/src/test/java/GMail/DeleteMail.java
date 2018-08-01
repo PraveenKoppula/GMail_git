@@ -1,3 +1,7 @@
+/*****************************************************************************
+Purpose of the class: Deleting a mail  
+*****************************************************************************/
+
 package GMail;
 
 import java.io.IOException;
@@ -43,8 +47,6 @@ public class DeleteMail {
 	@Test  (priority=1)
 	public void OpeningMail() throws InterruptedException
 	{
-		
-		System.out.println("Insideeeeeeeeeeeeee");
 		
 	//	driver.findElementByXPath("//android.view.View[1]").findElementByAndroidUIAutomator("content-desc(\"Select this conversation\")").isDisplayed();		
 	//	AndroidElement elem = driver.findElementByAndroidUIAutomator("content-desc(\"Select this conversation\")");		

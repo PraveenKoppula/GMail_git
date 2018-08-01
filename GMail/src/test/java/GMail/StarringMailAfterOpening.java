@@ -1,3 +1,11 @@
+/**********************************************************************************************
+Purpose of the class: 
+- Check the starred mails count
+- Open a mail and star it 
+- Get the starred mails count again to confirm
+Issues: Unable to star directly in Conversation view
+***********************************************************************************************/
+
 package GMail;
 
 import java.io.IOException;

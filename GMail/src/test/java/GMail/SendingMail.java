@@ -1,3 +1,8 @@
+/**********************************************************************************************
+Purpose of the class: 
+- Compose and send mail with CURRENT SYSTEM TIME in Subject and mail body 
+***********************************************************************************************/
+
 package GMail;
 
 import java.io.IOException;

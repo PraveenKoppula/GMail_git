@@ -1,3 +1,7 @@
+/**********************************************************************************************
+Purpose of the class: Opening all mails in the conversation view (irrespective of read/unread)
+***********************************************************************************************/
+
 package GMail;
 
 import java.io.IOException;

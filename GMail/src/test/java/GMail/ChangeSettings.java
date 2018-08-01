@@ -1,3 +1,7 @@
+/*****************************************************************************
+        Purpose of the class: Changing few General settings 
+*****************************************************************************/
+
 package GMail;
 
 import java.io.IOException;

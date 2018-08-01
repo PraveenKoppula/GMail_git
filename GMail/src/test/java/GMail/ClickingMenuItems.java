@@ -1,3 +1,7 @@
+/*****************************************************************************
+Purpose of the class: To Verify whether able to click all menu options  
+*****************************************************************************/
+
 package GMail;
 
 import java.io.IOException;

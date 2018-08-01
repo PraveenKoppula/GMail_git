@@ -1,3 +1,11 @@
+/**********************************************************************************************
+Purpose of the class: 
+- Gets the count of unread mail from menu item
+- Opening all UNREAD mails in the conversation view (only first view - 8 mails only)
+
+Issue: Unable to open if the unread mails are not in the view
+***********************************************************************************************/
+
 package GMail;
 
 import java.io.IOException;
