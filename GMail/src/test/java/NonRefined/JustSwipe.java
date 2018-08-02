@@ -6,6 +6,7 @@ package NonRefined;
 
 import java.io.IOException;
 import java.net.URL;
+import java.time.Duration;
 import java.util.List;
 
 import org.openqa.selenium.By;
@@ -22,10 +23,12 @@ import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
+import io.appium.java_client.MobileDriver;
 import io.appium.java_client.TouchAction;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.AndroidElement;
 import io.appium.java_client.remote.MobileCapabilityType;
+import io.appium.java_client.touch.WaitOptions;
 import io.appium.java_client.touch.offset.PointOption;
 
 public class JustSwipe {
@@ -47,7 +50,7 @@ public class JustSwipe {
 	@Test
 	public void OpeningMail() throws InterruptedException
 	{
-		for(int i=0; i<4 ; i++)
+		for(int i=0; i<2 ; i++)
 		{
 			TouchAction t = new TouchAction(driver);
 	//		t.press(PointOption.point(0,0)).moveTo(PointOption.point(0,306)).release().perform();			
@@ -55,10 +58,12 @@ public class JustSwipe {
 	//Dimension size = driver.findElementByXPath("//android.support.v7.widget.RecyclerView//android.view.View[@index=7]//android.view.View[@index=0]").getSize();
 			Dimension size=driver.manage().window().getSize();
 			int x=(int)(size.width/2);
-			int startY=(int)(size.getHeight() * 0.9);
-			int endY=(int)(size.getHeight() * 0.88);
+			int startY=(int)(size.getHeight() * 0.16);
+			int endY=(int)(size.getHeight() * 0.18615);
 			int duration=2000;
-			t.press(PointOption.point(x, startY)).moveTo(PointOption.point((x - x), (endY-startY))).release().perform();
+			t.press(PointOption.point(x, startY)).waitAction().moveTo(PointOption.point((x - x), (endY-startY))).release().perform();
+//			t.press(PointOption.point(500, 0)).waitAction().moveTo(PointOption.point(0, 50)).release().perform();
+//			new TouchAction((MobileDriver) driver).press(PointOption.point(x, startY)).waitAction(waitOptions)waitAction(Duration.ofMillis(duration)).moveTo(PointOption.point((x - x), (endY-startY))).release().perform();
 			
 			driver.findElementByXPath("//android.support.v7.widget.RecyclerView//android.view.View[@index=7]//android.view.View[@index=0]").click();
 			driver.navigate().back();
@@ -68,11 +73,11 @@ public class JustSwipe {
 		Thread.sleep(3000);
 	}
 	
-//	@AfterClass
-//	public void Close() throws InterruptedException
-//	{
-//		Thread.sleep(2000);
-//		driver.quit();	
-//	}
+	@AfterClass
+	public void Close() throws InterruptedException
+	{
+		Thread.sleep(2000);
+		driver.quit();	
+	}
 	
 }

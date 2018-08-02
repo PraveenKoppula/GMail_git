@@ -39,12 +39,6 @@ public class OpenUnreadMails {
 		cap.setCapability("appActivity", "com.google.android.gm.ConversationListActivityGmail");		
 		cap.setCapability("noReset", "true");
 		cap.setCapability("--session-override",true);
-		//cap.setCapability("automationName","uiautomator2");
-		//GMail activities: com.google.android.gm/com.google.android.gm.welcome.WelcomeTourActivity
-		//com.google.android.gm/com.google.android.gm.ConversationListActivityGmail
-		//com.google.android.gm/com.google.android.gm.welcome.SetupAddressesActivity
-		//cap.setCapability("fullReset", "true");
-		//cap.setCapability("fastReset", "true");		
 		driver = new AndroidDriver<>(new URL("http://0.0.0.0:4723/wd/hub"),cap);
 		Thread.sleep(2000);
     }
@@ -53,7 +47,7 @@ public class OpenUnreadMails {
 	public void OpeningMail() throws InterruptedException
 	{
 		driver.findElementByXPath("//android.widget.ImageButton[@content-desc='Open navigation drawer']").click();
-		String UnreadMailCount = driver.findElementByXPath("//android.widget.LinearLayout[@index=1]//android.widget.TextView[@resource-id='com.google.android.gm:id/unread']").getText().toString();
+		String UnreadMailCount = driver.findElementByXPath("//android.widget.LinearLayout[@index=2]//android.widget.TextView[@resource-id='com.google.android.gm:id/unread']").getText();
 		System.out.println("UnreadMailCount : " + UnreadMailCount);
 		driver.navigate().back();
 		Thread.sleep(2000);

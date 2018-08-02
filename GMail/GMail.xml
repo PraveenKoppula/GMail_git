@@ -3,12 +3,14 @@
 <suite name="GMail Automation tests" parallel="tests" verbose="10">
 	<test name="Sanity test" group-by-instances="true" verbose="2">		
 		<classes>
-			<class name="GMail.ClickingMenuItems" />
+			<class name="settings.DeferGaia_AddAccount" />
+			<class name="NonRefined.GMailFirstOpen" />			
 			<class name="GMail.OpenMails" />
 			<class name="GMail.SendingMail" />
 			<class name="GMail.SearchingMail" />
 			<class name="GMail.StarringMailAfterOpening" />	
 			<class name="GMail.ChangeSettings" />		
+			<class name="GMail.ClickingMenuItems" />
 		</classes>
 	</test>
 </suite>
