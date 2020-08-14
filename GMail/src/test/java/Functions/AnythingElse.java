@@ -11,7 +11,6 @@ import org.testng.annotations.Test;
 
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.AndroidElement;
-import io.appium.java_client.android.AndroidKeyCode;
 import io.appium.java_client.remote.MobileCapabilityType;
 import pageObjects.AnythingElse_objects;
 import pageObjects.Device;
